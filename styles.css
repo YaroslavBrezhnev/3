@@ -1,0 +1,98 @@
+/* Селектор тега */
+header {
+    background-color: #87ceeb;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
+}
+
+/* Селектор класу */
+.profile {
+    text-align: center;
+    margin: 20px;
+}
+
+/* Селектор класу */
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+/* Селектор ID */
+#user-name {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Селектор класу */
+.interest {
+    color: #2a9d8f;
+    font-size: 18px;
+    margin: 5px 0;
+    text-align: left;
+}
+
+/* Селектор класу для кнопок */
+.action-button {
+    background-color: #e76f51;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.action-button:hover {
+    background-color: #f4a261;
+}
+
+Робота с JS
+Файл index.html:
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Test</title>
+</head>
+<body>
+    <h1>Перевірка JavaScript</h1>
+    <p>Ця сторінка містить підключений JavaScript-файл.</p>
+    <script src="script.js"></script>
+</body>
+</html>
+
+Файл script.js:
+console.log("Це повідомлення у консолі.");
+alert("Це спливаюче вікно!");
+
+Визначення рівня успішності студента
+
+Код у файлі studentPerformance.js:
+
+// Введіть середню оцінку студента
+const averageGrade = 85; // Замініть на реальну оцінку
+
+// Визначення рівня успішності
+switch (true) {
+    case (averageGrade < 60):
+        console.log("Незадовільно");
+        break;
+    case (averageGrade >= 60 && averageGrade <= 70):
+        console.log("Задовільно");
+        break;
+    case (averageGrade >= 71 && averageGrade <= 80):
+        console.log("Добре");
+        break;
+    case (averageGrade >= 81 && averageGrade <= 90):
+        console.log("Дуже добре");
+        break;
+    case (averageGrade >= 91 && averageGrade <= 100):
+        console.log("Відмінно");
+        break;
+    default:
+        console.log("Некоректна оцінка");
+        break;
+}
